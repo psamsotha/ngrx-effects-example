@@ -1,0 +1,29 @@
+<div class="card card-block login-container">
+  <h2 class="login-title">Login</h2>
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm.form.value)">
+    <div class="username" class="form-group">
+      <label for="username">Username</label>
+      <input #usernameInput="ngModel" id="username" class="form-control"
+              type="text" required name="username" ngModel>
+      <div [hidden]="usernameInput.valid || usernameInput.pristine"
+            class="alert alert-danger">
+        Username is required
+      </div>
+    </div>
+    <div class="password" class="form-group">
+      <label for="password">Password</label>
+      <input #passwordInput="ngModel" id="password" class="form-control"
+              type="password" required name="password" ngModel>
+      <div [hidden]="passwordInput.valid || passwordInput.pristine"
+            class="alert alert-danger">
+        Password is required
+      </div>
+    </div>
+    
+    <div class="submit-container clearfix">
+      <button type="submit" class="btn btn-primary float-xs-right" [disabled]="!loginForm.form.valid">
+        Login
+      </button>
+    </div>
+  </form>
+</div>

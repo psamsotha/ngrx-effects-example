@@ -46,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: helpers.root('src'),
+        include: [helpers.root('src'), helpers.root('public')],
         loader: 'raw!postcss!sass'
       }
     ]

@@ -1,0 +1,37 @@
+$image-size: 30px;
+
+main {
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  display: block;
+}
+
+html, body, my-app {
+  height: 100%;
+}
+
+.user-details {
+  padding: 15px;
+}
+
+.user-name {
+  font-size: 30px;
+  line-height: 1;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.user-image, .logged-out-img {
+  width: $image-size;
+  height: $image-size;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logged-out-img {
+  border-radius: 15%;
+  background-color: lightgray;
+}
+

@@ -1,0 +1,14 @@
+<div class="clearfix">
+  <div class="user-details float-xs-right">
+
+    <span class="user-name">{{ (user | async)?.username }}</span>
+
+    <span class="logged-out-img"
+          *ngIf="user == null || (user | async)?.status != 'Logged in'">
+    </span>
+
+    <img class="user-image" *ngIf="(user | async)?.status == 'Logged in'"
+          [src]="(user | async).imageUrl" />
+  </div>
+</div>
+<login></login>
