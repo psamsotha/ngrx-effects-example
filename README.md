@@ -1,8 +1,8 @@
-Angular (documentation) Webpack Starter
-=======================================
+NgRx Effects Example
+====================
 
-A compilation of all the files from the [Angular Webpack documentation][angular-webpack]
-with some minor changes (add sass, move config to different directories).
+Supplementary example project for the article
 
+[Using Effects in an Angular 2 NgRx Application][1]
 
-[angular-webpack]: https://angular.io/docs/ts/latest/guide/webpack.html
+[1]: https://psamsotha.github.io/angular/2016/12/31/ngrx-effects-with-angular.html
