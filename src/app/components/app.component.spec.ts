@@ -97,7 +97,7 @@ describe('app', () => {
         });
       }));
 
-      it('should not show user image', async(() => {
+      it('should show user image', async(() => {
         updateUser().then(() => {
           let el = fixture.nativeElement.querySelector('.user-image');
           expect(el).not.toBeNull();

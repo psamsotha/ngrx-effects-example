@@ -27,7 +27,7 @@ describe('http', () => {
     describe('post()', () => {
       it('sould mock success response', async(() => {
         let credentials:Credentials = {
-          username: 'user',
+          username: 'Peeskillet',
           password: 'pass'
         };
         http.post(LOGIN_URL, credentials).subscribe(res => {

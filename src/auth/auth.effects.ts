@@ -20,7 +20,7 @@ export class AuthEffects {
 
   /**
    * On the LOGIN action, this effect will make a request to authenticate.
-   * If not authenticated, it will emit as LOAD_USER_FAILURE actions.
+   * If not authenticated, it will emit a LOAD_USER_FAILURE action.
    * Otherwise, it will emit a LOAD_USER_SUCCESS action.
    */
   @Effect()

@@ -48,6 +48,6 @@ export class MockLoginHttp extends Http {
   }
 
   private verifyCredentials(credentials: Credentials): boolean {
-    return credentials.username === 'user' && credentials.password === 'pass';
+    return credentials.username === 'Peeskillet' && credentials.password === 'pass';
   }
 }
