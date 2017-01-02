@@ -7,7 +7,7 @@
     "test": "karma start",
     "test:single": "karma start --single-run",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "echo '{\"main\": \"../bundles/effects-testing.umd.js\"}' > ./node_modules/@ngrx/effects/testing/package.json",
+    "postinstall:unix": "echo '{\"main\": \"../bundles/effects-testing.umd.js\"}' > ./node_modules/@ngrx/effects/testing/package.json",
     "postinstall:win": "echo {\"main\": \"../bundles/effects-testing.umd.js\"}\n > ./node_modules/@ngrx/effects/testing/package.json"
   },
   "license": "MIT",

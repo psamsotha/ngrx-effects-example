@@ -16,8 +16,8 @@ After clone
 ### Test
 
 Due to a [bug with `@ngrx/effect`][2] we need to run a post install script. If you're on a unix
-system, the `postinstall` script will automatically be run when you `npm install`. On Windows you
-need to run `npm run postinstall:win`. Then to test, run 
+system, run `npm run postinstall:unix`. On Windows you need to run `npm run postinstall:win`.
+Then to test, run 
 
     npm run test
 
